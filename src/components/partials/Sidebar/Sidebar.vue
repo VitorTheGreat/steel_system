@@ -179,10 +179,13 @@
 </template>
 
 <script lang="ts">
-export default {
+import { defineComponent } from 'vue';
+
+export default defineComponent ({
+  name: "Sidebar",
   data() {
       return {
-          openNav: false
+          openNav: false as boolean
       }
   },
   methods: {
@@ -190,5 +193,5 @@ export default {
       this.openNav = !this.openNav
     },
   },
-};
+});
 </script>
